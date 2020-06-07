@@ -5,7 +5,7 @@ services:
     restart: always
     command: v2ray -config=/etc/v2ray/config.json
     ports:
-      - "9002:16823"
+      - "500:16823"
     volumes:
       - ./config.json:/etc/v2ray/config.json
   v2ray2:
@@ -13,6 +13,22 @@ services:
     restart: always
     command: v2ray -config=/etc/v2ray/config.json
     ports:
-      - "9003:16823"
+      - "600:16823"
+    volumes:
+      - ./config.json:/etc/v2ray/config.json
+  v2ray3:
+    image: v2ray/official
+    restart: always
+    command: v2ray -config=/etc/v2ray/config.json
+    ports:
+      - "700:16823"
+    volumes:
+      - ./config.json:/etc/v2ray/config.json
+  v2ray4:
+    image: v2ray/official
+    restart: always
+    command: v2ray -config=/etc/v2ray/config.json
+    ports:
+      - "800:16823"
     volumes:
       - ./config.json:/etc/v2ray/config.json
