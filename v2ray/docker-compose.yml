@@ -5,7 +5,7 @@ services:
     restart: always
     command: v2ray -config=/etc/v2ray/config.json
     ports:
-      - "500:16823"
+      - "660:16823"
     volumes:
       - ./config.json:/etc/v2ray/config.json
   v2ray2:
@@ -13,7 +13,7 @@ services:
     restart: always
     command: v2ray -config=/etc/v2ray/config.json
     ports:
-      - "600:16823"
+      - "661:16823"
     volumes:
       - ./config.json:/etc/v2ray/config.json
   v2ray3:
@@ -21,7 +21,7 @@ services:
     restart: always
     command: v2ray -config=/etc/v2ray/config.json
     ports:
-      - "700:16823"
+      - "662:16823"
     volumes:
       - ./config.json:/etc/v2ray/config.json
   v2ray4:
@@ -29,6 +29,54 @@ services:
     restart: always
     command: v2ray -config=/etc/v2ray/config.json
     ports:
-      - "800:16823"
+      - "663:16823"
+    volumes:
+      - ./config.json:/etc/v2ray/config.json
+  v2ray5:
+    image: v2ray/official
+    restart: always
+    command: v2ray -config=/etc/v2ray/config.json
+    ports:
+      - "664:16823"
+    volumes:
+      - ./config.json:/etc/v2ray/config.json
+  v2ray6:
+    image: v2ray/official
+    restart: always
+    command: v2ray -config=/etc/v2ray/config.json
+    ports:
+      - "665:16823"
+    volumes:
+      - ./config.json:/etc/v2ray/config.json
+  v2ray7:
+    image: v2ray/official
+    restart: always
+    command: v2ray -config=/etc/v2ray/config.json
+    ports:
+      - "666:16823"
+    volumes:
+      - ./config.json:/etc/v2ray/config.json
+  v2ray8:
+    image: v2ray/official
+    restart: always
+    command: v2ray -config=/etc/v2ray/config.json
+    ports:
+      - "667:16823"
+    volumes:
+      - ./config.json:/etc/v2ray/config.json
+  v2ray9:
+    image: v2ray/official
+    restart: always
+    command: v2ray -config=/etc/v2ray/config.json
+    ports:
+      - "668:16823"
+    volumes:
+      - ./config.json:/etc/v2ray/config.json
+  v2ray10:
+    image: v2ray/official
+    restart: always
+    command: v2ray -config=/etc/v2ray/config.json
+    ports:
+      - "669:16823"
     volumes:
       - ./config.json:/etc/v2ray/config.json
